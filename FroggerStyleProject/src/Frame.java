@@ -34,8 +34,8 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	Font myFont = new Font("Courier", Font.BOLD, 25);
 	Font winFont = new Font("Courier", Font.BOLD, 30);
 	SimpleAudioPlayer backgroundMusic = new SimpleAudioPlayer("scifi.wav", false);
-//	Music soundBang = new Music("bang.wav", false);
-//	Music soundHaha = new Music("haha.wav", false);
+	//Music soundBang = new Music("bang.wav", false);
+	//Music soundHaha = new Music("haha.wav", false);
 	
 	Mario mario = new Mario();
 	//Mario mario2 = new Mario(300, 100);
@@ -75,6 +75,8 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	boolean winner = false;
 
 	public void paint(Graphics g) {
+		
+		backgroundMusic.play();
 		
 		super.paintComponent(g);
 		
